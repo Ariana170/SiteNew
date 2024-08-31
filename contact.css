@@ -1,0 +1,19 @@
+#contact{
+    background-color: bisque;
+    box-shadow: 5px 5px;
+    width: 50%;
+    min-width: 200px;
+    margin: 10% 25%;
+    text-align: center;
+    position: relative;
+    height: fit-content;
+    display: grid;
+}
+  
+#contact img{
+    width: 5%;
+}
+
+#cont_contact .data_contact{
+    display: block;
+}
