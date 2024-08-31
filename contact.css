@@ -1,19 +1,59 @@
+#item1 { grid-area: titlu; }
+#item2 { grid-area: nrtelefon; }
+#item3 { grid-area: iconphone; }
+#item4 { grid-area: mail; }
+#item5 { grid-area: iconmail; }
+#item6 { grid-area: adresa; }
+#item7 { grid-area: iconadresa; }
+
 #contact{
-    background-color: bisque;
+    background-color: #5C8374;
     box-shadow: 5px 5px;
     width: 50%;
+    gap: 10px;
     min-width: 200px;
     margin: 10% 25%;
-    text-align: center;
-    position: relative;
     height: fit-content;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'titlu titlu titlu'
+                         'iconphone nrtelefon nrtelefon'
+                         'iconmail mail mail'
+                         'iconadresa adresa adresa';
 }
   
 #contact img{
-    width: 5%;
+    width: 20%;
+    position: relative;
+    left: 30%;
+    float: right;
 }
 
-#cont_contact .data_contact{
-    display: block;
+.data_contact{
+    text-align: center;
+    font-size: large;
+}
+
+#item1{
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact{
+        width: 75%;
+        margin: 10% 12.5%;
+    }
+
+    #contact img{
+        width: 60%;
+        position: relative;
+        left: 30%;
+        float: right;
+        margin-top: 20%;
+    }
+
+    #contact{
+        grid-template-columns: 0.5fr 1fr 1fr;
+    }
+
 }

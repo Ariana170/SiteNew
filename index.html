@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Avocat Maria Petcu</title>
+<link rel="icon" type="image/x-icon" href="flavicon.png">
 <link rel="stylesheet" href="main_menu.css">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="main_content.css">
@@ -24,20 +25,20 @@
         <a href="#contact">Contact</a>
         <a href="#despre">Despre</a>
         <a href="#meniu_prim">Acasă</a>
-        <img src="MP.png">
+        <img src="flavicon.png">
     </div>
 
     <div id="meniu_prim_phone">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()", id="menu_phone">&times;</a>
-        <a href="#servicii">Servicii</a>
-        <a href="#contact">Contact</a>
-        <a href="#despre">Despre</a>
-        <a href="#main">Acasă</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="menu_phone">&times;</a>
+        <a href="servicii.html" onclick="closeNav()">Servicii</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+        <a href="#despre" onclick="closeNav()">Despre</a>
+        <a href="#main" onclick="closeNav()">Acasă</a>
     </div>
 
     <div id="out_nav_phone">
-    <img src="MP.png" style="height:70px;" id="img_side_nav">
-    <span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;" onclick="openNav()">&#9776;</span>
+    <img src="flavicon.png" style="height:70px;" id="img_side_nav">
+    <span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;color:#93B1A6" onclick="openNav()">&#9776;</span>
     </div>
     <script>
         function openNav() {
@@ -135,21 +136,15 @@
 <script src="review.js"></script>
 
 <div id="contact">
-    <h2>Date de contact:</h2>
-    <div id="cont_contact">
-    <div class="data_contact">
-        <p>+40 729 439 395</p>
-        <img src="phone.png">
-    </div>
-    <div class="data_contact">
-        <p>andresadeemail@yahoo.com</p>
-        <img src="phone.png">
-    </div>
-    <div class="data_contact">
-        <p>poate adresa</p>
-        <img src="phone.png">
-    </div>
-    </div>
+    <h2 id="item1" class="data_contact">Date de contact:</h2>
+    <img src="phone.png" id="item3" class="data_contact">
+    <p id="item2" class="data_contact">+40 729 439 395</p>
+    
+    <img src="phone.png" id="item5" class="data_contact">    
+    <p id="item4" class="data_contact">andresadeemail@yahoo.com</p>
+    
+    <img src="phone.png" id="item7" class="data_contact">
+    <p id="item6" class="data_contact">poate adresa</p>
 </div>
 
 <script src="menu.js"></script>

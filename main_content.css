@@ -1,9 +1,23 @@
+#imagine_meniu{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #183D3D;
+}
+
+#text_imagine{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 #descriere{
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #183D3D;
+    position: relative;
 }
 
 #citat{
+    background-color: #183D3D;
     width: 85%;
     position: relative;
     display: block;
@@ -15,7 +29,7 @@
 
 #text_descriere{
     position: relative;
-    background-color: bisque;
+    background-color: #93B1A6;
     font-size: x-large;
     padding: 5% 5% 5% 5%;
 }

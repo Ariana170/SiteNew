@@ -3,14 +3,14 @@ showSlides(slideIndex);
 
 var autoSlideInterval = setInterval(function() {
     plusSlides(1);
-  }, 20000); // Change slide every 20 seconds
+  }, 10000); // Change slide every 10 seconds
 
 function plusSlides(n) {
     clearInterval(autoSlideInterval); // Clear the interval to reset it
     showSlides(slideIndex += n);
     autoSlideInterval = setInterval(function() {
       plusSlides(1);
-    }, 20000); // Reset the interval after manual change
+    }, 10000); // Reset the interval after manual change
   }
   
   function currentSlide(n) {
@@ -18,7 +18,7 @@ function plusSlides(n) {
     showSlides(slideIndex = n);
     autoSlideInterval = setInterval(function() {
       plusSlides(1);
-    }, 20000); // Reset the interval after manual change
+    }, 10000); // Reset the interval after manual change
   }
 
 // Auto-slide functionality

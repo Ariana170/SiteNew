@@ -1,11 +1,11 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #1F2544;
+    background-color: #93B1A6;
 }
 
 #meniu_prim {
-    background-color: #1F2544;
+    background-color: #040D12;
     overflow: hidden;
     position: sticky;
     z-index: 5;
@@ -13,15 +13,16 @@ body{
 
 #meniu_prim > a{
     float: inline-end;
+    font-size: larger;
     text-decoration: none;
     padding: 2% 4% 2% 4%;
-    color: bisque;
+    color: #93B1A6;
     z-index: 5;
 }
 
 #meniu_prim a:hover {
-    background-color:bisque;
-    color: #1F2544;
+    background-color:#93B1A6;
+    color: #040D12;
   }
 
 #meniu_prim img{
@@ -31,9 +32,9 @@ body{
 }
 
 #imagine_prim_img{
-    height: 90%;
+    height: 100%;
     width: 100%;
-    background-color: #0F0F0F;
+    background-color: #93B1A6;
     object-fit: cover;
 }
 
@@ -90,7 +91,7 @@ body{
     #meniu_prim_phone {padding-top: 15px;}
     #meniu_prim_phone a {font-size: 18px;}
   }
-  
+
   @media screen and (min-width: 767px) {
     #out_nav_phone{
         display: none;
@@ -102,7 +103,7 @@ body{
     body{
         padding: 0;
         margin: 0;
-        background-color: #1F2544;
+        background-color: #93B1A6;
     }    
 
     #meniu_prim{
@@ -113,7 +114,7 @@ body{
         display: block;
         height: 70px;
         width: 100%;
-        background-color: #1F2544;
+        background-color: #040D12;
         z-index: 1;
     }
 
@@ -121,7 +122,7 @@ body{
     #imagine_prim_img{
         width: 100%;
         height: 600px;
-        background-color: #0F0F0F;
+        background-color: #040D12;
         object-fit: cover;
     }
     
