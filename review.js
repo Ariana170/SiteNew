@@ -1,29 +1,44 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+var autoSlideInterval = setInterval(function() {
+    plusSlides(1);
+  }, 20000); // Change slide every 20 seconds
+
 function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("review");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    clearInterval(autoSlideInterval); // Clear the interval to reset it
+    showSlides(slideIndex += n);
+    autoSlideInterval = setInterval(function() {
+      plusSlides(1);
+    }, 20000); // Reset the interval after manual change
   }
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
+  
+  function currentSlide(n) {
+    clearInterval(autoSlideInterval); // Clear the interval to reset it
+    showSlides(slideIndex = n);
+    autoSlideInterval = setInterval(function() {
+      plusSlides(1);
+    }, 20000); // Reset the interval after manual change
+  }
+
+// Auto-slide functionality
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("review");
+    var dots = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) {slideIndex = 1} // Wrap around to the first slide
+    if (n < 1) {slideIndex = slides.length} // Wrap around to the last slide
+  
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; // Hide all slides
+    }
+    
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideIndex-1].style.display = "block"; // Show the current slide
+    dots[slideIndex-1].className += " active"; // Highlight the current dot
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000);
-}
-

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Avocat Maria Petcu</title>
+<link rel="stylesheet" href="main_menu.css">
+</head>
+<body>
+
+
+    <div id="meniu_prim">
+        <a href="#servicii">Servicii</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#despre">Despre</a>
+        <a href="index.html#main">Acasă</a>
+        <img src="MP.png">
+    </div>
+
+    <div id="meniu_prim_phone">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()", id="menu_phone">&times;</a>
+        <a href="#servicii">Servicii</a>
+        <a href="#contact">Contact</a>
+        <a href="#despre">Despre</a>
+        <a href="#main">Acasă</a>
+    </div>
+
+    <div id="out_nav_phone">
+    <img src="MP.png" style="height:70px;" id="img_side_nav">
+    <span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;" onclick="openNav()">&#9776;</span>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("meniu_prim_phone").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("meniu_prim_phone").style.width = "0";
+        }
+    </script>
+   
+
+   <script src="menu.js"></script>
+
+</body>
+</html>

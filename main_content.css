@@ -1,0 +1,21 @@
+#descriere{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#citat{
+    width: 85%;
+    position: relative;
+    display: block;
+    font-size: xx-large;
+    padding: 2% 7.5% 2% 7.5%;
+    overflow: hidden;
+    font-style: italic;
+}
+
+#text_descriere{
+    position: relative;
+    background-color: bisque;
+    font-size: x-large;
+    padding: 5% 5% 5% 5%;
+}

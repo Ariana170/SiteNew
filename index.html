@@ -20,14 +20,14 @@
   <script src="load.js"></script>
 
     <div id="meniu_prim">
-        <a href="#servicii">Servicii</a>
+        <a href="servicii.html">Servicii</a>
         <a href="#contact">Contact</a>
         <a href="#despre">Despre</a>
-        <a href="#main">Acasă</a>
+        <a href="#meniu_prim">Acasă</a>
         <img src="MP.png">
     </div>
 
-    <div id="meniu_prim_phone", class="sidenav">
+    <div id="meniu_prim_phone">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()", id="menu_phone">&times;</a>
         <a href="#servicii">Servicii</a>
         <a href="#contact">Contact</a>
@@ -35,8 +35,10 @@
         <a href="#main">Acasă</a>
     </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
+    <div id="out_nav_phone">
+    <img src="MP.png" style="height:70px;" id="img_side_nav">
+    <span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;" onclick="openNav()">&#9776;</span>
+    </div>
     <script>
         function openNav() {
           document.getElementById("meniu_prim_phone").style.width = "100%";
@@ -54,14 +56,14 @@
 </div>
 
 <div id="descriere">
-<p>Prioritatea Cabinetului de avocatura Maria Petcu este de a servi interesele clientilor. Impreuna cu clientii sai, doamna avocat Maria Petcu, un avocat cu experienta de peste 20 
-    de ani in dreptul civil, comercial, bancar si al familiei, analizeaza si stabileste cea mai buna varianta de rezolvare a spetei in cauza. Fiecare caz este tratat cu seriozitatea 
-    si profesionalismul care o caracterizeaza pe doamna avocat. Se alege calea potrivita pentru a rezolva cu succes cazul. Cabietul nostru  trateaza fiecare dosar cu individualitate, 
-    analizand in prealabil cu rigurozitate fiecare speta, pentru a determina calea de actiune potrivita. Cabinetul de avocatura Petcu Maria isi trateaza clientii cu respect ,atentie 
-    si  profesionalism , pe tot parcursul procesului doamna avocat se consulta permanent cu clientul;  explica pas cu pas toata procedura din cauza respectiva de la prima consultatie 
-    juridica si pana la ultima infatisare in instanta, fiind deplin angajata sa respecte confidentialitatea si interesul clientilor sai in toate relatiile de comunicare. 
-
-    “Scopul meu este de a intrece asteptarile si de a face tot ce este posibil din punct de vedere legal pentru clientii mei, pentru ca interesele clientiilor mei sunt obligatia mea.  “ </p>
+    <div id="citat"><p>“Scopul meu este de a intrece asteptarile si de a face tot ce este posibil din punct de vedere legal pentru clientii mei, pentru ca interesele clientiilor mei sunt obligatia mea.  “ </p></div>
+    <p id="text_descriere">Prioritatea Cabinetului de avocatura Maria Petcu este de a servi interesele clientilor. Impreuna cu clientii sai, doamna avocat Maria Petcu, un avocat cu experienta de peste 20 
+        de ani in dreptul civil, comercial, bancar si al familiei, analizeaza si stabileste cea mai buna varianta de rezolvare a spetei in cauza. Fiecare caz este tratat cu seriozitatea 
+        si profesionalismul care o caracterizeaza pe doamna avocat. Se alege calea potrivita pentru a rezolva cu succes cazul. Cabietul nostru  trateaza fiecare dosar cu individualitate, 
+        analizand in prealabil cu rigurozitate fiecare speta, pentru a determina calea de actiune potrivita. Cabinetul de avocatura Petcu Maria isi trateaza clientii cu respect ,atentie 
+        si  profesionalism , pe tot parcursul procesului doamna avocat se consulta permanent cu clientul;  explica pas cu pas toata procedura din cauza respectiva de la prima consultatie 
+        juridica si pana la ultima infatisare in instanta, fiind deplin angajata sa respecte confidentialitatea si interesul clientilor sai in toate relatiile de comunicare. 
+    </p>
 </div>
 
 <div id="reviews">
@@ -112,7 +114,7 @@
 
         <h5 class="text_review">Recomand cu incredere. Foarte implicata si isi da tot interesul.</h5>
     </div>
-    
+
     <a class="prev" onclick="plusSlides(-1)">❮</a>
     <a class="next" onclick="plusSlides(1)">❯</a>
 
