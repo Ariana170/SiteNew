@@ -7,19 +7,19 @@ var autoSlideInterval = setInterval(function() {
 
 function plusSlides(n) {
     clearInterval(autoSlideInterval); // Clear the interval to reset it
-    showSlides(slideIndex += n);
+    showSlides(slideIndex += n);  // This calls showSlides with the updated index
     autoSlideInterval = setInterval(function() {
-      plusSlides(1);
+        plusSlides(1);
     }, 10000); // Reset the interval after manual change
-  }
-  
-  function currentSlide(n) {
+}
+
+function currentSlide(n) {
     clearInterval(autoSlideInterval); // Clear the interval to reset it
-    showSlides(slideIndex = n);
+    showSlides(slideIndex = n); // Directly set the slideIndex and show the slide
     autoSlideInterval = setInterval(function() {
-      plusSlides(1);
+        plusSlides(1);
     }, 10000); // Reset the interval after manual change
-  }
+}
 
 // Auto-slide functionality
 
@@ -38,7 +38,7 @@ function plusSlides(n) {
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    
+
     slides[slideIndex-1].style.display = "block"; // Show the current slide
     dots[slideIndex-1].className += " active"; // Highlight the current dot
   }

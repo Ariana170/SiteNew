@@ -3,43 +3,62 @@
 <head>
 <title>Avocat Maria Petcu</title>
 <link rel="stylesheet" href="main_menu.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main_content.css">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="review.css">
 <link rel="icon" type="image/x-icon" href="flavicon.png">
+<link rel="stylesheet" href="footer.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+  <div id="meniu_prim">
+    <a href="servicii.html">Servicii</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#descriere">Despre</a>
+    <a href="index.html#meniu_prim">Acasă</a>
+    <img src="flavicon.png">
+</div>
 
-    <div id="meniu_prim">
-        <a href="#servicii">Servicii</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="index.html#despre">Despre</a>
-        <a href="index.html#main">Acasă</a>
-        <img src="flavicon.png">
-    </div>
+<div id="meniu_prim_phone">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="menu_phone">&times;</a>
+    <a href="index.html#main" onclick="closeNav()">Acasă</a>
+    <a href="index.html#despre" onclick="closeNav()">Despre</a>
+    <a href="index.html#contact" onclick="closeNav()">Contact</a>
+    <a href="servicii.html" onclick="closeNav()">Servicii</a>
+</div>
 
-    <div id="meniu_prim_phone">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()", id="menu_phone">&times;</a>
-        <a href="#servicii">Servicii</a>
-        <a href="#contact">Contact</a>
-        <a href="#despre">Despre</a>
-        <a href="#main">Acasă</a>
-    </div>
+<div id="out_nav_phone">
+<img src="flavicon.png" style="height:70px;" id="img_side_nav">
+<span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;color:#93B1A6" onclick="openNav()">&#9776;</span>
+</div>
+<script>
+    function openNav() {
+      document.getElementById("meniu_prim_phone").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("meniu_prim_phone").style.width = "0";
+    }
+</script>
 
-    <div id="out_nav_phone">
-    <img src="flavicon.png" style="height:70px;" id="img_side_nav">
-    <span style="font-size:30px;cursor:pointer;float:right;padding:15px 25px 0px 0px;" onclick="openNav()">&#9776;</span>
-    </div>
-    <script>
-        function openNav() {
-          document.getElementById("meniu_prim_phone").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("meniu_prim_phone").style.width = "0";
-        }
-    </script>
-   
 
    <script src="menu.js"></script>
+
+   <footer>
+    <img src="flavicon.png" id="footer_img"><br>
+
+    <div id="f2">
+    <a href="index.html#imagine_meniu">Acasă</a><br>
+    <a href="index.html#descriere">Despre noi</a><br>
+    <a href="servicii.html">Servicii</a><br>
+    </div>
+    <div id="f3">
+    <a href="imagine_meniu">Politică de confidențialitate</a><br>
+    <a href="imagine_meniu">Termeni și condiții</a><br>
+    </div>
+</footer>
 
 </body>
 </html>
