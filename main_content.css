@@ -7,6 +7,7 @@
 #text_imagine{
     margin-bottom: 0;
     padding-bottom: 0;
+    font-size: 300%;
 }
 
 #descriere{
@@ -32,4 +33,17 @@
     background-color: #93B1A6;
     font-size: x-large;
     padding: 5% 5% 5% 5%;
+}
+
+@media only screen and (min-width: 768px) {
+    #imagine_meniu{
+    height: 500px;
+    object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #text_imagine{
+    font-size: 250%;
+    }
 }

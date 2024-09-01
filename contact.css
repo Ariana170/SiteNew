@@ -32,12 +32,19 @@
 }
 
 .data_contact{
-    text-align: center;
+    text-align: left;
     font-size: large;
+    text-decoration: none;
+}
+
+#contact a{
+    text-decoration: none;
+    color: black;
 }
 
 #item1{
     font-size: x-large;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
