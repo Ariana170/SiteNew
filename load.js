@@ -5,14 +5,14 @@ let intro = document.querySelector('.intro')
       setTimeout(()=>{
         logoSpan.forEach((span,idx) => {
           setTimeout(()=>{
-            span.classList.add('active')
+            span.classList.add('activeload')
         }, (idx+1)*400);
       });
 
       setTimeout(()=>{
         logoSpan.forEach((span,idx)=>{
           setTimeout(()=>{
-            span.classList.remove('active');
+            span.classList.remove('activeload');
             span.classList.add('fade');
           }, (idx+1)*50)
         })

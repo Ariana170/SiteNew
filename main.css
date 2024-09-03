@@ -36,9 +36,10 @@
 	bottom: -20px;
 	opacity: 0;
     z-index: 9;
+    background-color: #040D12;
 }
 
-.logo.active{
+.logo.activeload{
 	bottom: 0;
 	opacity: 1;
 	transition: ease-in-out 0.5s;
